@@ -1,0 +1,14 @@
+raw_dir: "data/raw"
+train_csv: "data/raw/boneage-training-dataset.csv"
+test_csv: "data/raw/boneage-test-dataset.csv"
+train_img_dir: "data/raw/boneage-training-dataset/boneage-training-dataset"
+test_img_dir: "data/raw/boneage-test-dataset/boneage-test-dataset"
+manifest_out: "artifacts/data/manifest.parquet"
+audit_out: "artifacts/data/audit.json"
+splits_out: "artifacts/data/splits_v2.csv"
+splits_audit_out: "artifacts/data/splits_v2_audit.json"
+source_version: "v2_20180124"
+expected_train_rows: 12611
+expected_test_rows: 200
+train_csv_sha256: "9459296c0fca3e3cd908e79002914d0d90c7f5e46936eefd34b11261468ce209"
+test_csv_sha256: "95d7de74b4bdf7551b81a249f7fce469865eaa5a6d20356c3af96fb2e56953de"

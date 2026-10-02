@@ -1,0 +1,6 @@
+﻿{
+    "state":  "complete",
+    "leader_run":  "artifacts/runs/standardized_v3_preserve_efficientnet_b0_512_screen",
+    "leader_config":  "configs/standardized_v3_efficientnet_b0_512.yaml",
+    "completed_at":  "2026-10-01T15:24:52.2896799+07:00"
+}

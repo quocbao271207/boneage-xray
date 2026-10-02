@@ -1,0 +1,50 @@
+source_manifest_path: "artifacts/data/manifest.parquet"
+source_splits_path: "artifacts/data/splits_v2.csv"
+mask_dirs:
+  - "data/external/rsna_hand_masks/eff_unet"
+  - "data/external/rsna_hand_masks/Tensormask"
+  - "data/external/rsna_hand_masks/manual"
+output_dir: "data/processed/standardized_v3_preserve"
+manifest_output: "artifacts/data/manifest_standardized_v3_preserve.parquet"
+splits_output: "artifacts/data/splits_standardized_v3_preserve.csv"
+metadata_output: "artifacts/data/standardized_v3_preserve_metadata.csv"
+audit_output: "artifacts/data/standardized_v3_preserve_audit.json"
+version: "standardized-v3-preserve"
+target_size: 1536
+workers: 6
+resume: true
+background_mode: "adaptive_uniform"
+intensity_mode: "preserve"
+mask_overrides:
+  1430: "data/external/rsna_hand_masks/Tensormask/1430.png"
+  2193: "data/external/rsna_hand_masks/Tensormask/2193.png"
+  3462: "data/external/rsna_hand_masks/Tensormask/3462.png"
+  3653: "data/external/rsna_hand_masks/Tensormask/3653.png"
+  4249: "data/external/rsna_hand_masks/Tensormask/4249.png"
+  4389: "data/external/rsna_hand_masks/Tensormask/4389.png"
+  7049: "data/external/rsna_hand_masks/Tensormask/7049.png"
+  7493: "data/external/rsna_hand_masks/Tensormask/7493.png"
+  7840: "data/external/rsna_hand_masks/Tensormask/7840.png"
+forearm_extension_overrides:
+  1378: 0.12
+  1522: 0.12
+  1738: 0.12
+skip_forearm_limit_ids:
+  - 7049 # user-directed: rotate left and remove marker without shortening the forearm
+rotation_overrides:
+  7049: 90.0 # exact user-directed counter-clockwise quarter-turn; no PCA residual deskew
+allowed_border_contact_ids:
+  - 7049 # original forearm reaches the source boundary; do not crop or paint it away
+flip_orientation_ids:
+  - 4249
+  - 5270
+  - 6692
+  - 6936
+  - 8728
+  - 8992
+  - 9620
+  - 11949
+  - 14232
+exclude_ids:
+  - 3100 # corrupted multi-limb exposure; absent from every available mask set
+  - 4244 # cassette frame is fused into every available mask set

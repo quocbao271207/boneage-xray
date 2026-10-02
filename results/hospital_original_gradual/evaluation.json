@@ -1,0 +1,131 @@
+{
+  "promote": true,
+  "mode": "gradual",
+  "input_variant": "raw",
+  "image_path_column": "raw_image_path",
+  "base": {
+    "mae": 11.42556635660418,
+    "rmse": 14.32053468396623,
+    "bias_months": 0.5844227110940305,
+    "median_ae": 9.547167968750003,
+    "p90_ae": 23.405977478027356,
+    "p95_ae": 27.97992553710938,
+    "p97_5_ae": 30.83467651367186,
+    "max_ae": 47.85448303222656,
+    "over_24_count": 21,
+    "over_24_rate": 0.10047846889952153,
+    "over_24_rate_upper_95": 0.13995190060461699,
+    "over_36_count": 2,
+    "over_48_count": 0,
+    "over_60_count": 0,
+    "within_6_months": 0.3349282296650718,
+    "within_12_months": 0.6028708133971292,
+    "within_18_months": 0.8086124401913876,
+    "mae_ci_95": [
+      10.27285114671625,
+      12.62137570467862
+    ],
+    "study_count": 209,
+    "by_sex": {
+      "F": {
+        "study_count": 166,
+        "mae": 10.204659721650275
+      },
+      "M": {
+        "study_count": 43,
+        "mae": 16.138833831077395
+      }
+    }
+  },
+  "adapted": {
+    "mae": 9.731263681804164,
+    "rmse": 12.048947242953382,
+    "bias_months": -1.152607712449069,
+    "median_ae": 8.377943420410162,
+    "p90_ae": 19.972860717773436,
+    "p95_ae": 23.426975708007802,
+    "p97_5_ae": 26.689753112792957,
+    "max_ae": 30.940397644042974,
+    "over_24_count": 10,
+    "over_24_rate": 0.04784688995215311,
+    "over_24_rate_upper_95": 0.07843666365255184,
+    "over_36_count": 0,
+    "over_48_count": 0,
+    "over_60_count": 0,
+    "within_6_months": 0.37799043062200954,
+    "within_12_months": 0.6602870813397129,
+    "within_18_months": 0.8564593301435407,
+    "mae_ci_95": [
+      8.790745450617592,
+      10.75110461595526
+    ],
+    "study_count": 209,
+    "by_sex": {
+      "F": {
+        "study_count": 166,
+        "mae": 9.23759519737887
+      },
+      "M": {
+        "study_count": 43,
+        "mae": 11.637053644934365
+      }
+    },
+    "prediction_interval": {
+      "coverage_target": 0.9,
+      "radius_months": 19.610469055175784,
+      "empirical_coverage": 0.8947368421052632
+    }
+  },
+  "train_patient_count": 568,
+  "validation_patient_count": 189,
+  "test_patient_count": 187,
+  "test_study_count": 209,
+  "paired_comparison": {
+    "baseline_name": "standardized_gradual",
+    "study_count": 147,
+    "baseline": {
+      "mae": 9.031895618049466,
+      "rmse": 11.490229869937854,
+      "bias_months": -0.3465767840949856,
+      "median_ae": 7.727307128906247,
+      "p90_ae": 19.22614959716798,
+      "p95_ae": 22.885635375976545,
+      "p97_5_ae": 26.79879989624023,
+      "max_ae": 34.604150390624994,
+      "over_24_count": 6,
+      "over_24_rate": 0.04081632653061224,
+      "over_24_rate_upper_95": 0.07697899819451882,
+      "over_36_count": 0,
+      "over_48_count": 0,
+      "over_60_count": 0,
+      "within_6_months": 0.4217687074829932,
+      "within_12_months": 0.7278911564625851,
+      "within_18_months": 0.8707482993197279
+    },
+    "candidate": {
+      "mae": 9.227760449883078,
+      "rmse": 11.680009486863952,
+      "bias_months": -0.461884634835379,
+      "median_ae": 7.7364349365234375,
+      "p90_ae": 19.084552001953124,
+      "p95_ae": 22.258945159912095,
+      "p97_5_ae": 27.395649642944324,
+      "max_ae": 30.940397644042974,
+      "over_24_count": 6,
+      "over_24_rate": 0.04081632653061224,
+      "over_24_rate_upper_95": 0.07697899819451882,
+      "over_36_count": 0,
+      "over_48_count": 0,
+      "over_60_count": 0,
+      "within_6_months": 0.4217687074829932,
+      "within_12_months": 0.7074829931972789,
+      "within_18_months": 0.8707482993197279
+    },
+    "mae_delta_candidate_minus_baseline": 0.19586483183361084,
+    "mae_delta_ci_95": [
+      -0.604456068155719,
+      0.9731151916867188
+    ],
+    "candidate_better": false
+  }
+}

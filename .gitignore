@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+*.egg-info/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Research data: never commit images, DICOM, labels, or extracted archives
+data/**
+!data/README.md
+*.dcm
+*.dicom
+*.zip
+*.7z
+*.tar
+*.gz
+
+# Generated runs and model weights
+artifacts/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Generated reports and local scratch files
+reports/generated/
+tmp/
+*.log
+coverage.xml
+htmlcov/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

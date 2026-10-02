@@ -1,0 +1,8 @@
+run_dir: "artifacts/runs/standardized_v3_preserve_efficientnet_b0_512_screen"
+prediction_interval_coverage: 0.90
+max_upload_bytes: 20971520
+device: "auto"
+review_thresholds:
+  max_ensemble_std_months: 6.0
+  max_border_attention_fraction: 0.45
+  min_gradcam_occlusion_correlation: 0.0

@@ -1,0 +1,20 @@
+hospital_manifest_path: "artifacts/hospital_external_validation_efficientnet_b0_512_full_cv/manifest.parquet"
+source_run_dir: "artifacts/runs/standardized_v3_preserve_efficientnet_b0_512_screen"
+artifact_dir: "artifacts/hospital_adaptation_efficientnet_b0_512_raw"
+image_path_column: "raw_image_path"
+require_standardization_passed: false
+reference_split_path: "artifacts/hospital_adaptation_efficientnet_b0_512/split.csv"
+paired_comparison:
+  baseline_name: "standardized_gradual"
+  baseline_predictions_path: "artifacts/hospital_adaptation_efficientnet_b0_512/gradual/test_predictions.csv"
+expected_checkpoint_count: 5
+seed: 20261001
+epochs: 4
+batch_size: 8
+head_learning_rate: 0.0001
+full_learning_rate: 0.00003
+weight_decay: 0.0001
+smooth_l1_beta: 0.25
+gradual_unfreeze_epoch: 2
+prediction_interval_coverage: 0.90
+device: "auto"

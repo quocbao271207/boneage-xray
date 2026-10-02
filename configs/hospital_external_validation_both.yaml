@@ -1,0 +1,18 @@
+archive_path: "data/hospital/original/Drive_TuoixuongXquang_BVND2_DHBKHCM.zip"
+output_root: "data/processed/hospital_external_efficientnet_b0_512"
+artifact_dir: "artifacts/hospital_external_validation_efficientnet_b0_512_full_cv"
+run_dir: "artifacts/runs/standardized_v3_preserve_efficientnet_b0_512_screen"
+hospital_input_variant: "both"
+standardization_enabled: true
+workers: 6
+batch_size: 16
+xai_cases: 8
+max_pdf_bytes: 20971520
+device: "auto"
+expected_checkpoint_count: 5
+prediction_interval_coverage: 0.90
+external_gates:
+  max_internal_external_mae_gap_months: 2.0
+  max_p95_months: 24.0
+  max_over_24_rate_upper_95: 0.05
+  max_subgroup_mae_gap_months: 3.0

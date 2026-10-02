@@ -1,0 +1,10 @@
+{
+  "selected_at": "2026-10-02T03:59:40.5039294+07:00",
+  "selection": "gradual",
+  "clinical_use": false,
+  "held_out_mae_months": 9.731263681804164,
+  "run_dir": "artifacts/hospital_adaptation_efficientnet_b0_512_raw/gradual",
+  "prediction_interval_radius_months": 19.610469055175784,
+  "prediction_interval_coverage": 0.9,
+  "hospital_input_variant": "raw"
+}
