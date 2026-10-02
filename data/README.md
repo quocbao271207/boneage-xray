@@ -3,6 +3,8 @@
 Không đưa ảnh, DICOM, nhãn bệnh viện hoặc bảng dự đoán từng ca vào Git. Tải dữ liệu từ
 bốn nguồn dưới đây và đặt vào đúng thư mục đích.
 
+Thư mục tổng hợp: [boneage-xray-data trên Google Drive](https://drive.google.com/drive/folders/1-ycA728P8KX5lP7WN68-uqrMYw7WJMNu).
+
 | Nhóm dữ liệu | Liên kết | Thư mục cục bộ |
 |---|---|---|
 | Kaggle RSNA — ảnh gốc | [Google Drive](https://drive.google.com/drive/folders/1q9Y8BG5Q0hhfoOG9CCdj9SvgStSjV04Y) | `data/raw/` |
