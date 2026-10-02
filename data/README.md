@@ -5,7 +5,7 @@ bốn nguồn dưới đây và đặt vào đúng thư mục đích.
 
 | Nhóm dữ liệu | Liên kết | Thư mục cục bộ |
 |---|---|---|
-| Kaggle RSNA — ảnh gốc | `DRIVE_KAGGLE_ORIGINAL_PENDING` | `data/raw/` |
+| Kaggle RSNA — ảnh gốc | [Google Drive](https://drive.google.com/drive/folders/1q9Y8BG5Q0hhfoOG9CCdj9SvgStSjV04Y) | `data/raw/` |
 | Kaggle RSNA — ảnh chuẩn hóa v3 | [Google Drive](https://drive.google.com/drive/folders/1Z9qC_Ha_qzf61kMs8zxbVh4Hfj5sju0n) | `data/processed/standardized_v3_preserve/` |
 | Bệnh viện — ảnh DICOM gốc | [Google Drive](https://drive.google.com/drive/folders/1oH4xdToS0kp7kyBkk1ZYjDQr9vhv6DWY) | `data/hospital/original/` |
 | Bệnh viện — ảnh chuẩn hóa | [Google Drive](https://drive.google.com/drive/folders/1xzkmKRkSoOl-F1s0ntuCl-5qfvxMEKaQ) | `data/hospital/standardized/` |
